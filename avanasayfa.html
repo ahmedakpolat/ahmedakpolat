@@ -1,0 +1,308 @@
+<html>
+<head>
+	<title>Document</title>
+	<link rel="stylesheet" href="style1.css">
+
+	<script>
+		var sayac=0;
+		function sepet()
+		{
+			sayac++;
+			document.getElementById('urun').innerHTML = sayac;
+		}
+	</script>
+</head>
+<body bgcolor="blue">
+
+	<div style="width:75%;height:75px;background-color:white;padding:10px 0px; position: fixed;top: 0;left: 0;z-index: 999;">
+		<div style="padding:0px 30px; width: 100%">
+			<img src="images/logo.jpg" style="height:50px;float:left;" />
+			<ul class="menu" >
+				<li>
+					<a href="avanasayfa.html">Anasayfa</a>	
+				</li>
+				<li>
+					<a href="#">Kategoriler</a>
+					<ul>
+						<li><a href="#">Elektronik</a>
+							<ul>
+								<li><a href="telefonlar.html">Telefon</a></li>
+								<li><a href="tabletler.html">Tablet</a></li>
+								<li><a href="aksesuarlar.html">Telefon Aksesuarları</a></li>
+								<li><a href="masaustupc.html">Masaüstü PC</a></li>
+								<li><a href="laptop.html">Laptop</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Giyim</a>
+							<ul>
+								<li><a href="erkekgiyim.html">Erkek Giyim</a></li>
+								<li><a href="kadingiyim.html">Bayan Giyim</a></li>
+								<li><a href="cocukgiyim.html">Çocuk Giyim</a></li>
+								<li><a href="outlet.html">Outlet Ürünler</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Hobi Malzemeleri</a>
+							<ul>
+								<li><a href="puzzle.html">Puzzle</a></li>
+								<li><a href="oyun.html">Oyun&Oyun Konsolları</a></li>
+								<li><a href="dronlar.html">Drone</a></li>
+								<li><a href="maket.html">Maketler</a></li>
+							</ul>
+						</li>
+						<li><a href="kirtasiye.html">Kırtasiye</a>
+						</li>	
+						<li><a href="market.html">Market</a>
+						</li>	
+						<li><a href="anne-bebek.html">Anne-Bebek</a>
+						</li>	
+						<li><a href="kozmetik.html">Kozmetik</a>
+						</li>
+						
+						<li><a href="#">Kitap-Müzik</a>
+							<ul>
+								<li><a href="roman.html">Roman</a></li>
+								<li><a href="egitim.html">Eğitim Kitapları</a></li>
+								<li><a href="enstrüman.html">Enstrümanlar</a></li>
+							</ul>
+						</li>	
+					</ul>
+				</li>
+				<li>
+					<a href="#">Kampanyalar</a>
+					<ul>
+						<li><a href="#">11:11 Kampanyası</a></li>
+						<li><a href="#">Anneler Gününe Özel Kampanyalar</a></li>
+						<li><a href="#">Babalar Gününe Özel Kampanyalar</a></li>	
+						<li><a href="#">Market Ürünlerinde %60'a Varan İndirimler</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="hakkımda.html">Hakkımızda</a>
+				</li>
+				<li>
+					<a href="#">Yardım</a>
+				</li>
+				<li>
+					<a href="#">İletişim</a>
+				</li>
+				<li style="left: 40px;">
+					<a href="#" >
+						<img src="images/icons/user.png" width="35px ">
+					</a>
+					<ul style="left: -60px">
+						<li><form style="font-family: sans-serif; background-color:  #98F8F8"><br>
+							Kullanıcı Adı<br>
+							<input type="text" style=" height: 30px;background-color: #fff;" name="adi"><br>
+							Şifre<br>
+							<input type="password" style="height: 30px;background-color: #fff;" name="sifre"><br><br>
+							<input type="button" name="Giriş Yap" value="Giriş Yap" style="height: 30px;background-color: #fff;"><br>
+						</form>
+					</li>
+				</ul>
+			</li>
+			<li style="left: 45px;">
+				<a href="#">
+					<img src="images/icons/register.png" width="35px " >
+				</a>
+				<ul style="left: -65px;">
+					<li style="background-color: #98F8F8;"><a href="#"><form><br>
+						E-posta Giriniz.<br>
+						<input type="text" name="eposta" size="20" style="height: 30px;background-color: #fff;">
+						Kullanıcı Adı<br>
+						<input type="text" name="adi" style="height: 30px;background-color: #fff;"><br>
+						Şifre<br>
+						<input type="password" name="sifre"style="height: 30px;background-color: #fff;"><br>
+						Şifreyi Tekrar Giriniz
+						<input type="password" name="sifre"style="height: 30px;background-color: #fff;"><br><br>
+						<input type="button" name="Giriş Yap" value="Kayıt Ol" style="height: 30px;background-color: #fff; width: 55px;">
+					</form>
+				</form></a></li>
+			</ul>
+		</li>	
+		<li style="left: 45px;">
+			<a href="#">
+				<img src="images/icons/sepet.png" width="35px" >
+			</a>
+			<ul style="left: -60px;">
+				<li><a href="#">Sepetinizde <span id="urun"> 0 </span> Ürün <br> Bulunmaktadır.</a></li>
+			</ul>
+		</li>
+	</ul>
+
+</div>
+</div>
+<div style="width:25%;height:75px;background-color:white;padding:10px 0px; position: fixed;top: 0;right: 0;z-index: 999; ">	
+
+</div>
+
+<form>
+	<br><br><br><br>
+
+	<div class="tual">  
+		<div class="sayfa">
+			<div class="sliderKonum">
+				<div class="slider">
+					<a class="img-bir" href="avanasayfa.html">
+						<img src="images/sliders/slider4.gif" alt="resim" width="700" height="400">
+					</a>
+					<a class="img-iki" href="avanasayfa.html">
+						<img src="images/sliders/slider4.gif" alt="resim" width="700" height="400">
+					</a>
+					<a class="img-uc" href="avanasayfa.html">
+						<img src="images/sliders/slider4.gif" alt="resim"width="700" height="400"> 
+					</a>
+				</div>
+			</div>
+			<div style="width: 350px;height: 410px;background-color: #fff;position: absolute;top: 90px;z-index: 222;">
+
+			</div>
+			<div style="right: 0px; width: 350px;height: 410px;background-color: #fff;position: absolute;top: 90px;z-index: 222;">
+			</div>
+
+		</div>
+		<br>
+		<h2>POPÜLER ÜRÜNLER </h2>
+		<div class="kutular">  
+			<div class="kutu1" style="overflow: hidden;">
+				<img src="images/anasayfakutu/kampanya1.jpg">
+				<button class="buton" style=""><a href="#"style="color: white; ">Alışverişe Devam Et</a></button>
+			</div>
+			<div class="kutu2" style="color: white;overflow: hidden;">
+				<img src="images/anasayfakutu/kampanya2.jpg">
+				<button class="buton"><a href="#"style="color: white;">Alışverişe Devam Et</a></button>
+			</div>
+			<div class="kutu3" style="color: white;overflow: hidden;">
+				<img src="images/anasayfakutu/kampanya3.jpg">
+				<button class="buton"><a href="#" style="color: white;">Alışverişe Devam Et</a></button>
+			</div>
+			<div class="kutu4" style="overflow: hidden;" >
+				<img src="images/anasayfakutu/kampanya4.jpg">
+				<button class="buton"><a href="#" style="color: white;">Alışverişe Devam Et</a></button>
+			</div>
+
+			<div style="clear: both"></div>
+		</div>
+		<div class="kutular">  
+			<div class="kutu1" style="color: white; overflow: hidden;">
+				<img src="images/anasayfakutu/kampanya5.jpg">
+				<button class="buton">Alışverişe Devam Et</button>
+
+			</div>
+			<div class="kutu2" style="color: white;overflow: hidden;">
+				<img src="images/anasayfakutu/kampanya6.jpg">
+				<button class="buton">Alışverişe Devam Et</button>
+			</div>
+			<div class="kutu3" style="color: white;overflow: hidden;">
+				<img src="images/anasayfakutu/kampanya7.jpg">
+				<button class="buton">Alışverişe Devam Et</button>
+			</div>
+			<div class="kutu4" style="color: white;overflow: hidden;">
+				<img src="images/anasayfakutu/kampanya8.jpg">
+				<button class="buton">Alışverişe Devam Et</button>
+			</div>
+
+			<div style="clear: both"></div>
+		</div>
+		<h2>TRENDLER</h2>
+		<br>
+		<div class="urunler">  
+			<div class="kutu1" style="color: white;overflow: hidden; top: -433px;">
+				<img src="images/trendurunler/1balıkçıyakaincetrikokazak.jpg">		
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust" style="left: 25px;">Balıkçı Yaka İnce Triko Kazak</button>
+				<button class="butonfiyat" style="left: -130px;">75₺</button>
+			</div>
+			<div class="kutu2" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/2mickeymousebaskılısweatshirt.jpg">	
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">	
+				<button class="butonust">Mickey Mouse Baskılı Sweatshirt</button>
+				<button class="butonfiyat " style="left: 0px;">75₺</button>
+			</div>
+			<div class="kutu3" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/3aktifspordesenlitayt.jpg">		
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Aktif Spor Desenli Tayt</button>
+				<button class="butonfiyat " style="left: -110px;">75₺</button>
+			</div>
+			<div class="kutu4" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/4renkbloklusweatshirt.jpg">		
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Renk Bloklu Sweatshirt</button>
+				<button class="butonfiyat " style="left: -110px;">75₺</button>
+			</div>
+
+			<div style="clear: both"></div>
+		</div>
+		<div class="urunler">  
+			<div class="kutu5" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/5ışıltıdetaylıminielbise.jpg">		
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust" style="left: 20px;">Işıltı Detaylı Mini Elbise</button>
+				<button class="butonfiyat" style="left: -115px;">75₺</button>
+			</div>
+			<div class="kutu6" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/6omuzlarıaçıktrikoelbise.jpg">
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Omuzları Açık Bisiklet Yaka Triko</button>
+				<button class="butonfiyat" style="left: 0px;">75₺</button>
+			</div>
+			<div class="kutu7" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/7bilekboyekosepantolon.jpg">
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Bilek Boy Ekose Pantolon</button>
+				<button class="butonfiyat" style="left: -115px;">75₺</button>
+			</div>
+			<div class="kutu8" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/8bisikletyakaincetrikokazak.jpg">
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Bisiklet Yaka İnce Triko Kazak</button>
+				<button class="butonfiyat" style="left: 0px;">75₺</button>
+			</div>
+
+			<div style="clear: both"></div>
+		</div>
+		<div class="urunler">  
+			<div class="kutu9" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/9regularfitmont.jpg">
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Regular Fit Mont</button>
+				<button class="butonfiyat" style="left: -80px;">75₺</button>		
+			</div>
+			<div class="kutu10" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/10erkekbağcıklıbot.jpg">
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Erkek Bağcıklı Bot</button>
+				<button class="butonfiyat" style="left: -95px;">75₺</button>
+			</div>
+			<div class="kutu11" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/11erkektrikopanduf.jpg">
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Erkek Triko Panduf</button>
+				<button class="butonfiyat" style="left: -90px;">75₺</button>
+			</div>
+			<div class="kutu12" style="color: white;overflow: hidden;">
+				<img src="images/trendurunler/12erkekbilekpostalbot.jpg">
+				<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+				<button class="butonust">Erkek Bilek Postal</button>
+				<button class="butonfiyat" style="left: -90px;">75₺</button>
+			</div>
+
+			<div style="clear: both"></div>
+		</div>
+		<div class="altkisim" style="to">
+			<div style="height: 80px;width: 60%;background-color: black; float: left;">
+				 <br><h3 style="color: #fff; text-align: left;">Ahmed AKPOLAT <br> Öğrenci Numarası:2019730008<br>İletişim:ahmed.akpolat@ogr.deu.edu.tr </h3>
+			</div>
+			<div style="height: 80px;width: 40%;background-color: black;float: right;">
+				<a href="#" style="position: relative;top: 5px;left: 123px;filter:invert(1)"><img src="images/icons/facebook.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 128px;"><img src="images/icons/instagram.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 133px;"><img src="images/icons/twitter.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 138px;"><img src="images/icons/google.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 143px;"><img src="images/icons/youtube.png" width="35px;"></a>
+			</div>
+		</div>
+
+
+	</form>
+</body>
+</html>

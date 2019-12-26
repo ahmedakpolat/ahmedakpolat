@@ -1,0 +1,208 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style1.css">
+	<script>
+		var sayac=0;
+		function sepet()
+		{
+			sayac++;
+			document.getElementById('urun').innerHTML = sayac;
+		}
+	</script>
+</head>
+<body bgcolor="blue"> 
+	<div style="width:75%;height:75px;background-color:white;padding:10px 0px; position: fixed;top: 0;left: 0;z-index: 999;">
+		<div style="padding:0px 30px; width: 100%">
+			<a href="avanasayfa.html"> <img src="images/logo.jpg" style="height:50px;float:left;" /></a>			
+						<ul class="menu" >
+				<li>
+					<a href="avanasayfa.html">Anasayfa</a>	
+				</li>
+				<li>
+					<a href="#">Kategoriler</a>
+					<ul>
+						<li><a href="#">Elektronik</a>
+							<ul>
+								<li><a href="telefonlar.html">Telefon</a></li>
+								<li><a href="tabletler.html">Tablet</a></li>
+								<li><a href="aksesuarlar.html">Telefon Aksesuarları</a></li>
+								<li><a href="masaustupc.html">Masaüstü PC</a></li>
+								<li><a href="laptop.html">Laptop</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Giyim</a>
+							<ul>
+								<li><a href="erkekgiyim.html">Erkek Giyim</a></li>
+								<li><a href="kadingiyim.html">Bayan Giyim</a></li>
+								<li><a href="cocukgiyim.html">Çocuk Giyim</a></li>
+								<li><a href="outlet.html">Outlet Ürünler</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Hobi Malzemeleri</a>
+							<ul>
+								<li><a href="puzzle.html">Puzzle</a></li>
+								<li><a href="oyun.html">Oyun&Oyun Konsolları</a></li>
+								<li><a href="dronlar.html">Drone</a></li>
+								<li><a href="maket.html">Maketler</a></li>
+							</ul>
+						</li>
+						<li><a href="kirtasiye.html">Kırtasiye</a>
+						</li>	
+						<li><a href="market.html">Market</a>
+						</li>	
+						<li><a href="anne-bebek.html">Anne-Bebek</a>
+						</li>	
+						<li><a href="kozmetik.html">Kozmetik</a>
+						</li>
+						
+						<li><a href="#">Kitap-Müzik</a>
+							<ul>
+								<li><a href="roman.html">Roman</a></li>
+								<li><a href="egitim.html">Eğitim Kitapları</a></li>
+								<li><a href="enstrüman.html">Enstrümanlar</a></li>
+							</ul>
+						</li>	
+					</ul>
+				</li>
+				<li>
+					<a href="#">Kampanyalar</a>
+					<ul>
+						<li><a href="#">11:11 Kampanyası</a></li>
+						<li><a href="#">Anneler Gününe Özel Kampanyalar</a></li>
+						<li><a href="#">Babalar Gününe Özel Kampanyalar</a></li>	
+						<li><a href="#">Market Ürünlerinde %60'a Varan İndirimler</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="hakkımda.html">Hakkımızda</a>
+				</li>
+				<li>
+					<a href="#">Yardım</a>
+				</li>
+				<li>
+					<a href="#">İletişim</a>
+				</li>
+				<li style="left: 40px;">
+					<a href="#" >
+						<img src="images/icons/user.png" width="35px ">
+					</a>
+					<ul style="left: -60px">
+						<li><form style="font-family: sans-serif; background-color:  #98F8F8"><br>
+							Kullanıcı Adı<br>
+							<input type="text" style=" height: 30px;background-color: #fff;" name="adi"><br>
+							Şifre<br>
+							<input type="password" style="height: 30px;background-color: #fff;" name="sifre"><br><br>
+							<input type="button" name="Giriş Yap" value="Giriş Yap" style="height: 30px;background-color: #fff;"><br>
+						</form>
+					</li>
+				</ul>
+			</li>
+			<li style="left: 45px;">
+				<a href="#">
+					<img src="images/icons/register.png" width="35px " >
+				</a>
+				<ul style="left: -65px;">
+					<li style="background-color: #98F8F8;"><a href="#"><form><br>
+						E-posta Giriniz.<br>
+						<input type="text" name="eposta" size="20" style="height: 30px;background-color: #fff;">
+						Kullanıcı Adı<br>
+						<input type="text" name="adi" style="height: 30px;background-color: #fff;"><br>
+						Şifre<br>
+						<input type="password" name="sifre"style="height: 30px;background-color: #fff;"><br>
+						Şifreyi Tekrar Giriniz
+						<input type="password" name="sifre"style="height: 30px;background-color: #fff;"><br><br>
+						<input type="button" name="Giriş Yap" value="Kayıt Ol" style="height: 30px;background-color: #fff; width: 55px;">
+					</form>
+				</form></a></li>
+			</ul>
+		</li>	
+		<li style="left: 45px;">
+			<a href="#">
+				<img src="images/icons/sepet.png" width="35px" >
+			</a>
+			<ul style="left: -60px;">
+				<li><a href="#">Sepetinizde <span id="urun"> 0 </span> Ürün <br> Bulunmaktadır.</a></li>
+			</ul>
+		</li>
+	</ul>
+
+</div>
+</div>
+<div style="width:25%;height:75px;background-color:white;padding:10px 0px; position: fixed;top: 0;right: 0;z-index: 999; ">	
+
+</div>
+<form>
+	<br><br><br><br>
+	<div class="urunler">  
+		<div class="kutu1" style="color: white;overflow: hidden; top: -433px;">
+			<img src="images/giyim/outlet/1.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left: 38px;">Sırt Detaylı Askılı Esnek Atlet</button>
+			<button class="butontabfiyat" style="left: -130px;">20₺</button>
+		</div>
+		<div class="kutu2" style="color: white;overflow: hidden;">
+			<img src="images/giyim/outlet/2.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left:0px;">Baskılı Bisiklet Yaka Sweatshirt</button>
+			<button class="butonoutfiyat " style="left: 0px;">50₺</button>
+		</div>
+		<div class="kutu3" style="color: white;overflow: hidden;">
+			<img src="images/giyim/outlet/3.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left: 30px;">Yazı Baskılı Pamuklu Tişört</button>
+			<button class="butontelfiyat " style="left: -120px;">35₺</button>
+		</div>
+		<div class="kutu4" style="color: white;overflow: hidden;">
+			<img src="images/giyim/outlet/4.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left: 48px;">Kapüşonlu Sweatshirt</button>
+			<button class="butontelfiyat " style="left: -95px;">35₺</button>
+		</div>
+		
+		<div style="clear: both"></div>
+	</div>
+	<div class="urunler">  
+		<div class="kutu5" style="color: white;overflow: hidden;">
+			<img src="images/giyim/outlet/5.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left: 38px;">Yaka Detaylı Jakarlı Tişört</button>
+			<button class="butontelfiyat" style="left: -118px;">20₺</button>
+		</div>
+		<div class="kutu6" style="color: white;overflow: hidden;">
+			<img src="images/giyim/outlet/6.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left: 0px;">Beli Lastikli Desenli Viskon Şort</button>
+			<button class="butonoutfiyat" style="left: 0px;">25₺</button>
+		</div>
+		<div class="kutu7" style="color: white;overflow: hidden;">
+			<img src="images/giyim/outlet/7.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left: 0px;">Fermuarlı Kapüşonlu Sweatshirt</button>
+			<button class="butonoutfiyat" style="left: 0px;">55₺</button>
+		</div>
+		<div class="kutu8" style="color: white;overflow: hidden;">
+			<img src="images/giyim/outlet/8.jpg">		
+			<input type="button" class="buton"  onclick="sepet()"value="Sepete Ekle">
+			<button class="butonust" style="left: 38px;">Pul Payetli Şapka</button>
+			<button class="butonaksfiyat" style="left: -77px;">20₺</button>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+	<div class="altkisim" style="to">
+			<div style="height: 80px;width: 60%;background-color: black; float: left;">
+				 <br><h3 style="color: #fff; text-align: left;">Ahmed AKPOLAT <br> Öğrenci Numarası:2019730008<br>İletişim:ahmed.akpolat@ogr.deu.edu.tr </h3>
+			</div>
+			<div style="height: 80px;width: 40%;background-color: black;float: right;">
+				<a href="#" style="position: relative;top: 5px;left: 123px;filter:invert(1)"><img src="images/icons/facebook.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 128px;"><img src="images/icons/instagram.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 133px;"><img src="images/icons/twitter.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 138px;"><img src="images/icons/google.png" width="35px;"></a>
+				<a href="#" style="filter:invert(1);position: relative;top: 5px;left: 143px;"><img src="images/icons/youtube.png" width="35px;"></a>
+			</div>
+		</div>
+
+</form>
+</body>
+</html>
